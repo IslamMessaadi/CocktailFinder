@@ -38,11 +38,11 @@ class UI {
       }
       
       // Checks if current page is Favorites.html, then reload one
-      if(window.location.pathname == '/favorites.html') location.reload(true);
+      if(window.location.pathname == '/CocktailFinder/favorites.html') location.reload(true);
   }
 
   showCocktail(cocktail) {
-    let output;
+    let output='';
 
     cocktail.drinks.forEach(drink => {
       output += `<div class="card card-body my-3 special-card ">
@@ -69,6 +69,9 @@ class UI {
       </div>`
     });
 
+    //console.log('output >>>>>>>>>> ',output) ;
+    //console.error(output) ;
+    //if(output !== 'undefined') 
     this.cocktailCard.innerHTML = output;
 
     // Fetch button to toggle class on it
@@ -84,7 +87,7 @@ class UI {
   }  
 
   showFavorites(favorite) {
-    let favOutput;
+    let favOutput="";
 
     // Check output from favorite data, and them properly added to output
     favorite.drinks.forEach(drink => {
@@ -112,6 +115,9 @@ class UI {
     </div>`
     });
 
+    //if(favOutput !== 'undefined') 
+    //console.log('output >>>>>>>>>> ',favOutput) ;
+   //console.error(favOutput) ;
     this.favoritesCard.innerHTML += favOutput;
 
     // Fetch button to toggle class on it

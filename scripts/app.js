@@ -8,6 +8,7 @@ const ui = new UI();
 window.addEventListener('load', (e) => {
   let favs = JSON.parse(localStorage.getItem('favorites'));
 
+  if(favs == null) return;
   favs.forEach((fav) => {
     cocktail.getFavorite(fav)
       .then(data => {
