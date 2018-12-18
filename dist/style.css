@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+
+body { 
+  background: url(./img/bar.jpg) no-repeat center center fixed !important;
+  font-family: 'Lora', serif !important;
+}
+
+.special-card {
+  background-color: rgba(114, 98, 90, 0.95) !important;
+}
+
+input {
+  width: 50% !important;
+}
+
+footer {
+  width: 70% !important;
+}
+
+.favBtn{
+  color: #FFD700 !important;
+  background-color: #343a40 !important;
+  border: #343a40 !important;
+}
