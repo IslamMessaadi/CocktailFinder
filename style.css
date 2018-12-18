@@ -2,16 +2,12 @@
 
 
 body { 
-  background: url(./img/bar1-min.jpeg) no-repeat center center fixed !important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(./img/bar.jpg) no-repeat center center fixed !important;
   font-family: 'Lora', serif !important;
 }
 
 .special-card {
-  background-color: rgba(145, 145, 145, 0.95) !important;
+  background-color: rgba(114, 98, 90, 0.95) !important;
 }
 
 input {

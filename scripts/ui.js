@@ -45,24 +45,25 @@ class UI {
     let output='';
 
     cocktail.drinks.forEach(drink => {
-      output += `<div class="card card-body my-3 special-card ">
+      output += `<div class="card card-body my-5 special-card shadow-lg">
         <div class="row">
           <div class="col-md-6">
             <img class="img-fluid mb-2 rounded" src="${drink.strDrinkThumb}" />
           </div>
           <div class="col-md-6 text-center">
-            <button id="${drink.idDrink}" class="btn btn-outline-dark float-right" type="submit" data-toggle="tooltip" data-placement="bottom" title="Add to favorites">
+            <button id="${drink.idDrink}" class="btn btn-outline-dark float-right my-2" type="submit" data-toggle="tooltip" data-placement="bottom" title="Add to favorites">
               <span class="far fa-star"></span>
             </button>
-            <h2 class="my-2">${drink.strDrink}</h2>
-            <p class="my-4 text-white">${drink.strInstructions}</p>
-            <ul class="list-group text-white">
-              <li class="list-group-item special-card">${drink.strMeasure1}  ${drink.strIngredient1}</li>
-              <li class="list-group-item special-card">${drink.strMeasure2}  ${drink.strIngredient2}</li>
-              <li class="list-group-item special-card">${drink.strMeasure3}  ${drink.strIngredient3}</li>
-              <li class="list-group-item special-card">${drink.strMeasure4}  ${drink.strIngredient4}</li>
-              <li class="list-group-item special-card">${drink.strMeasure5}  ${drink.strIngredient5}</li>
-              <li class="list-group-item special-card">${drink.strMeasure6}  ${drink.strIngredient6}</li>
+            <h2 class="my-2 text-center">${drink.strDrink}</h2>
+            <hr>
+            <p class="my-4  text-left text-white">${drink.strInstructions}</p>
+            <ul class="list-group">
+              <li class="list-group-item special-card text-white">${drink.strMeasure1}  ${drink.strIngredient1}</li>
+              <li class="list-group-item special-card text-white">${drink.strMeasure2}  ${drink.strIngredient2}</li>
+              <li class="list-group-item special-card text-white">${drink.strMeasure3}  ${drink.strIngredient3}</li>
+              <li class="list-group-item special-card text-white">${drink.strMeasure4}  ${drink.strIngredient4}</li>
+              <li class="list-group-item special-card text-white">${drink.strMeasure5}  ${drink.strIngredient5}</li>
+              <li class="list-group-item special-card text-white">${drink.strMeasure6}  ${drink.strIngredient6}</li>
             </ul>
           </div>
         </div>
@@ -91,24 +92,25 @@ class UI {
 
     // Check output from favorite data, and them properly added to output
     favorite.drinks.forEach(drink => {
-      favOutput += `<div class="card card-body my-3 special-card animated fadeIn">
+      favOutput += `<div class="card card-body my-3 shadow-lg special-card animated fadeIn">
       <div class="row">
         <div class="col-md-6">
           <img class="img-fluid mb-2 rounded" src="${drink.strDrinkThumb}" />
         </div>
         <div class="col-md-6 text-center">
-          <button id="${drink.idDrink}" class="btn btn-outline-dark float-right favBtn" type="submit" data-toggle="tooltip" data-placement="bottom" title="Remove from favorites">
+          <button id="${drink.idDrink}" class="btn btn-outline-dark float-right my-2 favBtn" type="submit" data-toggle="tooltip" data-placement="bottom" title="Remove from favorites">
             <span class="far fa-star"></span>
           </button>
-          <h2 class="my-2">${drink.strDrink}</h2>
-          <p class="my-4 text-white">${drink.strInstructions}</p>
-          <ul class="list-group text-white">
-            <li class="list-group-item special-card">${drink.strMeasure1}  ${drink.strIngredient1}</li>
-            <li class="list-group-item special-card">${drink.strMeasure2}  ${drink.strIngredient2}</li>
-            <li class="list-group-item special-card">${drink.strMeasure3}  ${drink.strIngredient3}</li>
-            <li class="list-group-item special-card">${drink.strMeasure4}  ${drink.strIngredient4}</li>
-            <li class="list-group-item special-card">${drink.strMeasure5}  ${drink.strIngredient5}</li>
-            <li class="list-group-item special-card">${drink.strMeasure6}  ${drink.strIngredient6}</li>
+          <h2 class="my-2 text-center">${drink.strDrink}</h2>
+          <hr>
+          <p class="my-4 text-white text-left">${drink.strInstructions}</p>
+          <ul class="list-group ">
+            <li class="list-group-item shadow-lg text-white special-card">${drink.strMeasure1}  ${drink.strIngredient1}</li>
+            <li class="list-group-item shadow-lg text-white special-card">${drink.strMeasure2}  ${drink.strIngredient2}</li>
+            <li class="list-group-item shadow-lg text-white special-card">${drink.strMeasure3}  ${drink.strIngredient3}</li>
+            <li class="list-group-item shadow-lg text-white special-card">${drink.strMeasure4}  ${drink.strIngredient4}</li>
+            <li class="list-group-item shadow-lg text-white special-card">${drink.strMeasure5}  ${drink.strIngredient5}</li>
+            <li class="list-group-item shadow-lg text-white special-card">${drink.strMeasure6}  ${drink.strIngredient6}</li>
           </ul>
         </div>
       </div>
