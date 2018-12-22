@@ -117,10 +117,12 @@ class UI {
     </div>`
     });
 
-    //if(favOutput !== 'undefined') 
-    //console.log('output >>>>>>>>>> ',favOutput) ;
-   //console.error(favOutput) ;
+
+   if(favOutput !== null) {
     this.favoritesCard.innerHTML += favOutput;
+   } else {
+     return;
+   }
 
     // Fetch button to toggle class on it
     let outputBtn = document.querySelectorAll(".btn.btn-outline-dark.float-right");

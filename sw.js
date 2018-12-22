@@ -5,6 +5,7 @@ const cacheAssets = [
   'about.html',
   'favorites.html',
   '/img/bar1-min.jpeg',
+  'img/icons/icon-144x144.png',
   'https://use.fontawesome.com/releases/v5.5.0/css/all.css',
   'style.css',
   '/scripts/app.js',
