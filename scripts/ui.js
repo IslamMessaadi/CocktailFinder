@@ -70,11 +70,12 @@ class UI {
       </div>`
     });
 
-    //console.log('output >>>>>>>>>> ',output) ;
-    //console.error(output) ;
-    //if(output !== 'undefined') 
-    this.cocktailCard.innerHTML = output;
-
+    if(output != null) {
+      this.cocktailCard.innerHTML = output;
+    } else {
+      return;
+    }
+    
     // Fetch button to toggle class on it
     let outputBtn = document.querySelectorAll(".btn.btn-outline-dark.float-right");
 
@@ -118,7 +119,7 @@ class UI {
     });
 
 
-   if(favOutput !== null) {
+   if(favOutput != null) {
     this.favoritesCard.innerHTML += favOutput;
    } else {
      return;
